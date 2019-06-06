@@ -1,0 +1,15 @@
+.header {
+    padding: 20rem 0 51rem;
+    background-image: url("../images/banner_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &__iphone {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

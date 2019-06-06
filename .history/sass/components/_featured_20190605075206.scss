@@ -1,0 +1,47 @@
+#featured {
+    padding: 120px 0;
+}
+
+#iphone_futured {
+  padding: 240px 0 330px;
+  position: relative;
+
+
+  .iphone_futured {
+
+
+      .btn-group {
+
+          button {
+              // margin-left: 20px;
+              border-radius: 30px;
+              height: 40px;
+          }
+          button:nth-child(1) {
+              width: 200px;
+              padding-left: 20px;
+              text-align: left;
+              margin-right: 20px;
+              
+
+              i {
+                  margin-left: 50px;
+              }
+          }
+          button:nth-child(2) {
+              width: 140px;
+              background: transparent;
+              border: 0.5px solid $secondary-border-color;
+              color: $text-color;
+          }
+
+      }
+  }
+
+  .iphone-showcase {
+      position: absolute;
+      right: 50%;
+      bottom: -110px;
+
+  }
+}

@@ -1,0 +1,42 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+  
+  h1 {
+    font-size: 6.2rem;
+    line-height: 7.2rem;
+  }
+  
+  h2 {
+    font-size: 5.2rem;
+    line-height: 5.2rem;
+    margin-bottom: 6.4rem;
+  }
+  
+  h3 {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    font-weight: 300;
+    margin-bottom: 4.6rem;
+  }
+  
+  h4 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+  
+  p.subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #8c8f94;
+  }

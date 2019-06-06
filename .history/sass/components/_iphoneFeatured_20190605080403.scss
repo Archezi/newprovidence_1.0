@@ -1,0 +1,42 @@
+#iphone_featured {
+    padding: 240px 0 330px;
+    position: relative;
+  
+  
+    .iphone_featured {
+  
+  
+        .btn-group {
+  
+            button {
+                border-radius: 3rem;
+                height: 4rem;
+            }
+            button:nth-child(1) {
+                width: 20rem;
+                padding-left: 2rem;
+                text-align: left;
+                margin-right: 2rem;
+                
+  
+                i {
+                    margin-left: 5rem;
+                }
+            }
+            button:nth-child(2) {
+                width: 14rem;
+                background: transparent;
+                border: 0.5px solid $secondary-border-color;
+                color: $text-color;
+            }
+  
+        }
+    }
+  
+    .iphone-showcase {
+        position: absolute;
+        right: 50%;
+        bottom: -11rem;
+  
+    }
+  }
