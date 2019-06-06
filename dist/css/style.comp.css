@@ -28,6 +28,9 @@ ul, li {
   .hidden-xs {
     display: none; } }
 
+.container {
+  max-width: 117rem; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
@@ -313,41 +316,140 @@ p {
 #perfect_plan {
   background: #f4f4f5;
   padding: 150px 0 250px; }
-  #perfect_plan .choose_plan h4 {
+  #perfect_plan .choose_plan h4.title {
     font-size: 42px; }
+  #perfect_plan .choose_plan p.subtitle {
+    font-size: 1.6rem;
+    font-weight: 300; }
+  #perfect_plan .choose_plan a {
+    font-size: 1.6rem; }
+  #perfect_plan .choose_plan .choice_buttons-container {
+    position: relative;
+    width: 26rem;
+    height: 5.2rem;
+    width: 100%;
+    float: left;
+    margin-bottom: 7rem; }
   #perfect_plan .choose_plan .choice_buttons {
     position: relative;
-    width: 260px;
-    height: 48px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
+    width: 26rem;
+    height: 5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around; }
     #perfect_plan .choose_plan .choice_buttons .choice_button {
-      padding: 10px 0px;
+      padding: 1rem 0rem;
       text-align: center;
-      width: 120px;
-      border-radius: 30px;
+      width: 12rem;
+      border-radius: 3rem;
       align-self: center;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 1.6rem;
+      line-height: 2.2rem; }
+    #perfect_plan .choose_plan .choice_buttons .choice_button.individual,
+    #perfect_plan .choose_plan .choice_buttons .choice_button.company {
+      position: relative;
+      width: 13rem;
+      float: left;
+      padding: 1rem 1rem;
+      text-align: center;
+      margin: 0 0.3rem;
+      z-index: 2;
+      cursor: pointer;
+      font-size: 1.4rem;
+      color: #8c8f94;
+      transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1); }
     #perfect_plan .choose_plan .choice_buttons .choice_button.active {
       background: #fff;
       color: #212529;
-      box-shadow: 2px 5px 20px 0px rgba(0, 0, 0, 0.15);
-      text-shadow: 2px 5px 20px rgba(0, 0, 0, 0.15); }
+      box-shadow: 0.2rem 0.5rem 2rem 0rem rgba(0, 0, 0, 0.15);
+      text-shadow: 0.2rem 0.5rem 2rem rgba(0, 0, 0, 0.15);
+      transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1); }
+    #perfect_plan .choose_plan .choice_buttons .choice_button.active:after {
+      left: 13.5rem;
+      top: 0.3rem; }
     #perfect_plan .choose_plan .choice_buttons .choice_buttons:after {
       position: absolute;
       content: "";
-      width: 122px;
-      height: 42px;
+      width: 12rem;
+      height: 4.2rem;
       background: #ffffff;
-      left: 3px;
-      top: 3px;
-      border-radius: 30px;
-      -moz-border-radius: 30px;
-      -webkit-border-radius: 30px;
-      box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
-      -moz-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
-      -webkitbox-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+      left: 0.3rem;
+      top: 0.3rem;
+      border-radius: 3.0rem;
+      -moz-border-radius: 3.0rem;
+      -webkit-border-radius: 3.0rem;
+      box-shadow: 0.25rem 4.33rem 2rem 0rem rgba(61, 61, 62, 0.059);
+      -moz-box-shadow: 0.25rem 4.33rem 2rem 0rem rgba(61, 61, 62, 0.059);
+      -webkitbox-shadow: 0.25rem 4.33rem 2rem 0rem rgba(61, 61, 62, 0.059);
       transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1); }
+
+#price_tables {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  #price_tables .price-table {
+    background-color: #ebebed;
+    z-index: 1;
+    width: 34rem;
+    padding: 2rem 0; }
+    #price_tables .price-table .table-inner {
+      padding: 4rem 1.5rem 5.0rem; }
+    #price_tables .price-table h3 {
+      margin: 0 auto 2rem;
+      line-height: 1.6em; }
+    #price_tables .price-table .price {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #26272d;
+      padding: 0.9rem 1.8rem;
+      border: 0.1rem solid rgba(38, 39, 45, 0.2);
+      display: inline-block;
+      margin-bottom: 4.0rem;
+      border-radius: 3.0rem;
+      -moz-border-radius: 3.0rem;
+      -webkit-border-radius: 3.0rem; }
+    #price_tables .price-table .phrase {
+      margin: 0 auto 1rem; }
+    #price_tables .price-table .feature-list {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: #26272d;
+      margin: 2rem auto; }
+      #price_tables .price-table .feature-list i {
+        color: #6fc754;
+        padding-right: 0.5rem; }
+    #price_tables .price-table a.btn-blue {
+      background-color: transparent;
+      border: 1px solid #267df4;
+      color: #267df4;
+      border-radius: 3rem;
+      width: 24rem;
+      padding: 1rem;
+      font-size: 1.6rem; }
+  #price_tables .individual.active .price-table.highlighted {
+    background: #fff;
+    z-index: 2;
+    box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    -moz-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    -webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2); }
+    #price_tables .individual.active .price-table.highlighted .table-inner {
+      padding: 6rem 1.5rem 7rem; }
+    #price_tables .individual.active .price-table.highlighted a.btn-blue {
+      background: #007bff;
+      color: #fff; }
+  #price_tables .company.active .price-table.highlighted {
+    background: #fff;
+    z-index: 2;
+    box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    -moz-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+    -webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2); }
+    #price_tables .company.active .price-table.highlighted .table-inner {
+      padding: 6rem 1.5rem 7rem; }
+    #price_tables .company.active .price-table.highlighted a.btn-blue {
+      background: #007bff;
+      color: #fff; }
