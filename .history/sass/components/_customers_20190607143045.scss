@@ -45,7 +45,7 @@
         margin-left: 0;
         @include respond(phone) {
             margin: 0;
-            width: 100%;
+            width: 90%;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -61,17 +61,16 @@
             -ms-transform: scale(0.7);
             -webkit-transform: scale(0.7);
             transition: all 0.97s cubic-bezier(0.545, 0, 0.05, 1);
-            
+            @include respond(phone) {
+                width: 8rem;
+                height: 8rem;
+            }
             img {
                 position: absolute;
                 border-radius: 100%;
                 right: 0;
                 z-index: 2;
                 box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18);
-                @include respond(phone) {
-                    width: 10rem;
-                    height: 10rem;
-                }
             }
             
 

@@ -30,6 +30,10 @@ ul, li {
 
 .container {
   max-width: 117rem; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      max-width: 100vw;
+      overflow: hidden; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
@@ -350,8 +354,10 @@ p {
       margin-bottom: 60px; }
     #map_featured .map_featured_content h4 {
       margin-bottom: 40px; }
-    #map_featured .map_featured_content .partner_container img {
-      margin-right: 30px; }
+    #map_featured .map_featured_content .partner_container {
+      display: flex; }
+      #map_featured .map_featured_content .partner_container img {
+        margin-right: 30px; }
     #map_featured .map_featured_content .featured_map_img img {
       position: absolute;
       top: 0;
@@ -434,7 +440,7 @@ p {
   @media only screen and (max-width: 56.25em) {
     #customers .testimonials-slider {
       margin: 0 auto;
-      max-width: 80%; } }
+      max-width: 100vw; } }
   #customers i {
     color: #8c8f94;
     font-size: 22px; }
@@ -460,6 +466,12 @@ p {
     left: 0;
     margin-left: 0;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      #customers .carousel-indicators {
+        margin: 0;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%); } }
     #customers .carousel-indicators li {
       width: 130px;
       height: 130px;
@@ -477,6 +489,10 @@ p {
         right: 0;
         z-index: 2;
         box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18); }
+        @media only screen and (max-width: 37.5em) {
+          #customers .carousel-indicators li img {
+            width: 10rem;
+            height: 10rem; } }
     #customers .carousel-indicators li.active {
       transform: scale(1);
       -ms-transform: scale(1);
