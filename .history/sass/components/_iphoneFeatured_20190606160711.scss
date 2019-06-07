@@ -1,0 +1,58 @@
+#iphone_featured {
+    padding: 24rem 0 33rem;
+    position: relative;
+    @include respond(phone) {
+        padding: 0rem 0 5rem;
+    }
+    .iphone_featured {
+        
+        @include respond(phone) {
+            width: 100%;
+            margin: 0 auto;
+            p:last-of-type {
+                margin-bottom: 5rem;
+            }
+        }
+        .btn-group {
+            button {
+                border-radius: 3rem;
+                height: 4rem;
+                font-size: 1.6rem;
+            }
+            button:nth-child(1) {
+                width: 20rem;
+                padding-left: 2rem;
+                text-align: left;
+                margin-right: 2rem;
+                i {
+                    margin-left: 5rem;
+                }
+            }
+            button:nth-child(2) {
+                width: 14rem;
+                background: transparent;
+                border: 0.5px solid $secondary-border-color;
+                color: $text-color;
+            }
+        }
+    }
+    .iphone-showcase {
+        position: absolute;
+        right: 50%;
+        bottom: -5rem;
+        @include respond(phone) {
+            padding: 0 1.5rem;
+            position: relative;
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            .device {
+                margin-top: 10rem;
+            }
+            .device img {
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+  }

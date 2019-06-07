@@ -1,0 +1,29 @@
+#featured {
+    padding: 12rem 0;
+    @include respond(tab-port) {
+        padding: 12rem 0 6rem;
+    }
+    @include respond(phone) {
+        padding: 12rem 0 6rem;
+    }
+    .featured-item {
+        margin-bottom: 4rem;
+        @include respond(tab-port) {
+            width: 100vw;
+        }
+    }
+    .f-description {
+        h4 {
+            font-weight: 500;
+        }
+    }
+    .f-icon i {
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+

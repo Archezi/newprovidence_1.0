@@ -1,0 +1,30 @@
+.header {
+    padding: 20rem 0 51rem;
+    background-image: url("../images/banner_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    @include respond(phone) {
+        padding: 15rem 0 30rem;
+        
+    }
+    &_content {
+        margin: 0 auto;
+    }
+
+    &__iphone {
+        position: absolute;
+        bottom: -80rem;
+        left: 50%;
+        margin-left: -17rem;
+        @include respond(phone) {
+            width: 50vw;
+            height: auto;
+            bottom: -45rem;
+            margin-left: -10rem;
+        }
+    }
+    
+}

@@ -1,0 +1,41 @@
+// Map Featured Section
+#map_featured {
+    padding: 24rem 0 33rem;
+    position: relative;
+    @include respond(tab-port) {
+        padding: 10rem 0 10rem;
+    }
+    .map_featured_content {
+        position: relative;
+        @include respond(tab-port) {
+            position: relative;
+            width: 100vw;
+            
+        }
+
+        h2 {
+            margin-bottom: 60px;
+        }
+        h4 {
+            margin-bottom: 40px;
+        }
+        .partner_container {
+            img {
+                margin-right: 30px;
+            }
+        }
+        .featured_map_img {
+            position: absolute;
+            top: 0;
+            left:500px;
+            @include respond(tab-port) {
+                position: relative;
+                left: 0;
+                
+            }
+        }
+        
+    }
+    
+    
+}

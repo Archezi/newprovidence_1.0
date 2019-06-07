@@ -1,0 +1,99 @@
+
+    
+    #slide_out_menu {
+        position: fixed;
+        display: block;
+        width: 38rem;
+        max-width: 65rem;
+        height: 100%;
+        // left: -38rem;
+        top: 0;
+        padding: 4rem;
+        z-index: 50;
+        background: #26272d;
+        transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+      }
+      .menu-close {
+       position: absolute;
+       color: $white;
+       right: 2.0rem;
+       top: 5.2rem;
+       font-size: 1.6rem;
+      }
+      
+      ul.side-navigation-list {
+        margin-top: 40px;
+        li {
+            display: block;
+            margin: 10px 0;
+            a { 
+                font-family: 'Roboto';
+                color: $white;
+                font-size: 1.6rem;
+                font-weight: 500;
+                &:hover {
+                    color: $a-hover-color;
+                }
+            }
+            .btn-blue {
+                background: $button-primary;
+                border-radius: 3rem;
+                border: 0.1rem solid $button-primary;
+                &:hover {
+
+                    color: $white;
+                }   
+            }
+            &:last-child {
+                margin-top: 2rem;
+            }
+        }
+      }
+      
+      .slide_out_menu_footer {
+       position: absolute;
+       display: block;
+       width: 100%;
+       left: 0;
+       bottom: 0;
+       padding: 2.0rem 4.0rem 2.5rem;
+       
+        .more-info {
+            p {
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: rgba(255, 255, 255, 0.8);
+                margin: 0;
+            }
+            a {
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+            }
+        } 
+        .socials {
+            margin: 1.8rem 0 0;
+            li {
+                display: inline-block;
+                margin: 0 2.0rem 0 0;
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                    transition: all .2s ease-in-out;
+                    font-size: 1.6rem;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+                &::last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+      }
+      #slide_out_menu.active {
+        left: 0;
+    }
+      
+      
+      
+      
+  

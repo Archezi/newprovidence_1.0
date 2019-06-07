@@ -1,0 +1,213 @@
+#perfect_plan {
+    background: $perfect-plan-bg;
+    padding: 15.0rem 0 25.0rem;
+    @include respond(tab-port) {
+        padding: 15rem 0 15rem;
+    }
+    .plan_container {
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    .plan {
+        @include respond(tab-port) {
+            max-width: 100%;
+        }
+    }
+    .choose_plan {
+        h4.title {
+            font-size: 4.2rem;
+        }
+        p.subtitle {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+        a {
+            font-size: 1.6rem;
+        }
+        .choice_buttons-container {
+            position: relative;
+            width: 26rem;
+            height: 5.2rem;
+            width: 100%;
+            float: left;
+            margin-bottom: 7rem;
+        }
+        .choice_buttons {
+            position: relative;
+            width: 26rem;
+            height: 5rem;
+            border: 0.1rem solid $secondary-border-color;
+            border-radius: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .choice_button {
+                padding: 1rem 0rem;
+                text-align: center;
+                width: 12rem;
+                border-radius: 3rem;
+                align-self: center;
+                cursor: pointer;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+            .choice_button.individual,
+            .choice_button.company {
+                position: relative;
+                width: 13rem;
+                float: left;
+                padding: 1rem 1rem;
+                text-align: center;
+                margin: 0 0.3rem;
+                z-index: 2;
+                cursor: pointer;
+                font-size: 1.4rem;
+                color: #8c8f94;
+                transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+            }
+            .choice_button.active {
+                background: #fff;
+                color: $text-color;
+                box-shadow: .2rem .5rem 2.0rem .0rem rgba(0, 0, 0, 0.15);
+                text-shadow: .2rem .5rem 2.0rem rgba(0, 0, 0, 0.15);
+                transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+            }
+            .choice_button.active:after {
+                left: 13.5rem;
+                top: 0.3rem;
+            }
+            .choice_buttons:after {
+                position: absolute;
+                content: "";
+                width: 12rem;
+                height: 4.2rem;
+                background: #ffffff;
+                left: 0.3rem;
+                top: 0.3rem;
+                border-radius: 3.0rem;
+                -moz-border-radius: 3.0rem;
+                -webkit-border-radius: 3.0rem;
+                box-shadow: 0.25rem 4.33rem 2.0rem 0rem rgba(61, 61, 62, 0.059);
+                -moz-box-shadow: 0.25rem 4.33rem 2.0rem 0rem rgba(61, 61, 62, 0.059);
+                -webkitbox-shadow: 0.25rem 4.33rem 2.0rem 0rem rgba(61, 61, 62, 0.059);
+                transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+            }
+        }
+    }
+}
+
+#price_tables {
+    display: flex;
+    align-items: center;
+    
+    max-width: 100%;
+    width: 100%;
+    @include respond(tab-port) {
+        flex-direction: row;
+        .price-table {
+            margin-top: 2rem;
+        }
+    }
+    @include respond(phone) {
+        flex-direction: column;
+    }
+     .price-table  {
+        background-color: $priceTableColor;
+        z-index: 1;
+        width: 34rem;
+        padding: 2rem 0;
+        .table-inner {
+            padding: 4rem 1.5rem 5.0rem;
+            // transition: all 0.2s ease-out;
+        }
+        h3 {
+            margin: 0 auto 2rem;
+            line-height: 1.6em;
+        }
+        .price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #26272d;
+            padding: 0.9rem 1.8rem;
+            border: 0.1rem solid rgba(38, 39, 45, 0.2);
+            display: inline-block;
+            margin-bottom: 4.0rem;
+            border-radius: 3.0rem;
+            -moz-border-radius: 3.0rem;
+            -webkit-border-radius: 3.0rem;
+        }
+        .phrase {
+            margin: 0 auto 1rem;
+        }
+        .feature-list {
+            color: #26272d;
+            margin: 2rem auto;
+            li {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                margin-bottom: 1rem;
+
+            }
+            i {
+                color: $btn-green;
+                padding-right: 0.5rem;
+            }
+
+        }
+        a.btn-blue {
+            background-color: transparent;
+            border: 1px solid #267df4;
+            color: #267df4;
+            border-radius: 3rem;
+            width: 24rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            
+        }
+        
+    }
+    .individual.active {
+        .price-table {
+            &.highlighted {
+                background: $white;
+                z-index: 2;
+                box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+                -moz-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+                -webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+                .table-inner {
+                    padding: 6rem 1.5rem 7rem;
+                    
+                }
+                a.btn-blue {
+                    background: $button-primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .company.active {
+        .price-table {
+            &.highlighted {
+                background: $white;
+                z-index: 2;
+                box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+                -moz-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+                -webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+                .table-inner {
+                    padding: 6rem 1.5rem 7rem;
+                    
+                }
+                a.btn-blue {
+                    background: $button-primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+     
+}
